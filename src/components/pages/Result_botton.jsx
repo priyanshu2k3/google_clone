@@ -22,9 +22,7 @@ function ResultBottom() {
             {data?.searchInformation.formattedSearchTime})for {term}{" "}
           </p>
           {data?.items.map((item) => {
-            {
-              console.log(item.link, "mapping");
-            }
+            return(
             <div className="response">
               <a href={item.Link} className="response__link">
                 <img
@@ -43,7 +41,7 @@ function ResultBottom() {
                 software, together. Contribute to the open source community,
                 manage your Git repositories, ...
               </p>
-            </div>;
+            </div>)
           })}
         </div>
       )}
